@@ -3,8 +3,19 @@ using UnityEngine;
 
 namespace GameCore.Character
 {
+    [CreateAssetMenu(menuName = "Configs/Character/Stats", fileName = "New Stats")]
     public class Stat : ScriptableObject
     {
+        [SerializeField] private int _life;
+        [SerializeField] private int _damage;
+        [SerializeField] private int _armor;
+
+        public int Life => _life;
+        public int Damage => _damage;
+        public int Armor => _armor;
+
+        #region Old
+
         [SerializeField]
         private int baseValue;	// Starting value
 
@@ -32,5 +43,7 @@ namespace GameCore.Character
             if (modifier != 0)
                 _modifiers.Remove(modifier);
         }
+
+        #endregion
     }
 }

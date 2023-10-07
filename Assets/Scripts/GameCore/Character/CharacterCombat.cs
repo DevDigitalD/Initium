@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameCore.Character
 {
@@ -9,7 +10,7 @@ namespace GameCore.Character
         public event System.Action OnAttack;
         
         [SerializeField] private float _attackSpeed = 1f;
-        [SerializeField] private float attackDelay = .6f;
+        [SerializeField] private float _attackDelay = 1f;
         
         private float _attackCooldown = 0f;
         private CharacterStats _myStats;
@@ -28,7 +29,7 @@ namespace GameCore.Character
         {
             if (_attackCooldown <= 0f)
             {
-                StartCoroutine(DoDamage(targetStats, attackDelay));
+                StartCoroutine(DoDamage(targetStats, _attackDelay));
 
                 if (OnAttack != null)
                     OnAttack();
@@ -41,7 +42,7 @@ namespace GameCore.Character
         {
             yield return new WaitForSeconds(delay);
 
-            stats.TakeDamage(_myStats.damage.GetValue());
+            stats.TakeDamage(_myStats.Damage);
         }
     }
 }

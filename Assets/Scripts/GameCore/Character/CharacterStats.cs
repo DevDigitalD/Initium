@@ -4,39 +4,38 @@ namespace GameCore.Character
 {
     public sealed class CharacterStats : MonoBehaviour
     {
-        // Health
-        public int maxHealth = 100;
-        public int currentHealth { get; private set; }
+        public int Damage => _enemyStat.Damage;
 
-        public Stat damage;
-        public Stat armor;
+        [SerializeField] private Stat _enemyStat;
+        
+        private int _currentHealth;
 
         // Set current health to max health
         // when starting the game.
-        private void Awake ()
+        private void Start ()
         {
-            currentHealth = maxHealth;
+            _currentHealth = _enemyStat.Life;
         }
 
         // Damage the character
         public void TakeDamage (int damage)
         {
             // Subtract the armor value
-            damage -= armor.GetValue();
+            damage -= _enemyStat.Armor;
             damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
             // Damage the character
-            currentHealth -= damage;
+            _currentHealth -= damage;
             Debug.Log(transform.name + " takes " + damage + " damage.");
 
             // If health reaches zero
-            if (currentHealth <= 0)
+            if (_currentHealth <= 0)
             {
                 Die();
             }
         }
 
-        public void Die ()
+        private void Die ()
         {
             // Die in some way
             // This method is meant to be overwritten

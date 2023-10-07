@@ -27,20 +27,21 @@ namespace GameCore.Character.EnemyCharacter
             var distance = Vector3.Distance(_target.position, transform.position);
 
             // If inside the lookRadius
-            if (distance <= _lookRadius)
-            {
-                // Move towards the target
-                _agent.SetDestination(_target.position);
+            if (!(distance <= _lookRadius)) 
+                return;
+            // Move towards the target
+            _agent.SetDestination(_target.position);
 
-                // If within attacking distance
-                if (distance <= _agent.stoppingDistance)
-                {
-                    var targetStats = _target.GetComponent<CharacterStats>();
-                    if (targetStats != null) _combat.Attack(targetStats);
+            // If within attacking distance
+            if (!(distance <= _agent.stoppingDistance)) 
+                return;
+            
+            var targetStats = _target.GetComponent<CharacterStats>();
+            
+            if (targetStats != null) 
+                _combat.Attack(targetStats);
 
-                    FaceTarget(); // Make sure to face towards the target
-                }
-            }
+            FaceTarget(); // Make sure to face towards the target
         }
 
         // Rotate to face the target
