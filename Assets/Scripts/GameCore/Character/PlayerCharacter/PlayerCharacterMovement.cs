@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Android;
 
 namespace GameCore.Character.PlayerCharacter
 {
@@ -6,6 +8,7 @@ namespace GameCore.Character.PlayerCharacter
     public class PlayerCharacterMovement : MonoBehaviour
     {
         [SerializeField] private Transform _cameraTransform;
+        [SerializeField] private Joystick _joystick;
         [SerializeField] private float _speed;
         [SerializeField] private float _turnSmoothTime = 0.1f;
         private CharacterController _characterController;
@@ -18,8 +21,8 @@ namespace GameCore.Character.PlayerCharacter
 
         private void Update()
         {
-            float horizontal = Input.GetAxisRaw("Horizontal");
-            float vertical = Input.GetAxisRaw("Vertical");
+            float horizontal = _joystick.Horizontal;//Input.GetAxisRaw("Horizontal");
+            float vertical = _joystick.Vertical;//Input.GetAxisRaw("Vertical");
             Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
             if (direction.magnitude >= 0.1f)
