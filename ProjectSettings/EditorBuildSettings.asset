@@ -4,7 +4,30 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ActionRPGKit/ExampleScene/Title.unity
+    guid: 26f1d81c8d9580048bf0def1a3cfb1cb
+  - enabled: 1
+    path: Assets/ActionRPGKit/ExampleScene/BeakVillage.unity
+    guid: 44179f95b77711743b11dd2ea60ab3fc
+  - enabled: 1
+    path: Assets/ActionRPGKit/ExampleScene/Dungeon.unity
+    guid: dad89272b5992794086b7a4d084bee1f
+  - enabled: 1
+    path: Assets/ActionRPGKit/ExampleScene/GoblinForest.unity
+    guid: d0923abfe2b5b1f47b7ab926fa21d8f8
+  - enabled: 1
+    path: Assets/ActionRPGKit/ExampleScene/Plain.unity
+    guid: 5f6c4fd2e35422a4c88e18a71c48ea0b
+  - enabled: 1
+    path: Assets/ActionRPGKit/ExampleScene/SpiderCavern.unity
+    guid: 4b31ad61ec4c84c44b8bceab8fd97ae8
+  - enabled: 0
+    path: Assets/ActionRPGKit/MobileExample/MobileExampleCsharp.unity
+    guid: e5f8952e8a2ad7b4eba19f69d24bd086
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 4e9505ca1ad08ee4abf96014f4c6fb7e,
+      type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 066646d99aed0d5479b1109c540ea396, type: 2}

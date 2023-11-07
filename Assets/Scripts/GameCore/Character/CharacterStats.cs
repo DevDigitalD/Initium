@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameCore.Character
 {
     public sealed class CharacterStats : MonoBehaviour
     {
-        public int Damage => _enemyStat.Damage;
+        //public int Damage => enemyCharactersTemplateScriptableOblect.Damage;
 
-        [SerializeField] private Stat _enemyStat;
+        [FormerlySerializedAs("enemyCharactersTemplate")] [FormerlySerializedAs("enemyCharacterStat")] [FormerlySerializedAs("_enemyStat")] [SerializeField] private CharactersTemplateScriptableObject enemyCharactersTemplateScriptableOblect;
         
         private int _currentHealth;
 
@@ -14,14 +15,14 @@ namespace GameCore.Character
         // when starting the game.
         private void Start ()
         {
-            _currentHealth = _enemyStat.Life;
+            //_currentHealth = enemyCharactersTemplateScriptableOblect.Health;
         }
 
         // Damage the character
         public void TakeDamage (int damage)
         {
             // Subtract the armor value
-            damage -= _enemyStat.Armor;
+            //damage -= enemyCharactersTemplateScriptableOblect.Armor;
             damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
             // Damage the character

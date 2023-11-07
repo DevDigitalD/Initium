@@ -1,0 +1,1470 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: ItemDataC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.469342, y: 0.09645724, z: 13.944976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09649c7c29369234d9002b98e056aa3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usableItem:
+  - itemName: 
+    icon: {fileID: 0}
+    iconSprite: {fileID: 21300000, guid: 442ae440c81180847919be9ae09ecfc7, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 0
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: Potion
+    icon: {fileID: 2800000, guid: 09e2f0cde5706a44d941a156aee75795, type: 3}
+    iconSprite: {fileID: 21300000, guid: 09e2f0cde5706a44d941a156aee75795, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Recover 50 HP
+    description2: 
+    description3: 
+    price: 100
+    hpRecover: 50
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: Ether
+    icon: {fileID: 2800000, guid: b4f4a7e72683a474492deb64bd4c2df9, type: 3}
+    iconSprite: {fileID: 21300000, guid: b4f4a7e72683a474492deb64bd4c2df9, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Recover 50 MP
+    description2: 
+    description3: 
+    price: 100
+    hpRecover: 0
+    mpRecover: 50
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: High Potion
+    icon: {fileID: 2800000, guid: 968e8a4fd067ec04e88376f004353adc, type: 3}
+    iconSprite: {fileID: 21300000, guid: 968e8a4fd067ec04e88376f004353adc, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Recover 200 HP
+    description2: 
+    description3: 
+    price: 300
+    hpRecover: 200
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: High Ether
+    icon: {fileID: 2800000, guid: 8cddb794992241745807470e3be14af1, type: 3}
+    iconSprite: {fileID: 21300000, guid: 8cddb794992241745807470e3be14af1, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Recover 200 MP
+    description2: 
+    description3: 
+    price: 300
+    hpRecover: 0
+    mpRecover: 200
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: Trunk
+    icon: {fileID: 2800000, guid: 73529658d9d308a458b01da3a9fd6517, type: 3}
+    iconSprite: {fileID: 21300000, guid: 73529658d9d308a458b01da3a9fd6517, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 50
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Spider Web
+    icon: {fileID: 2800000, guid: 740234aa81e1fd843982d7597582a1a2, type: 3}
+    iconSprite: {fileID: 21300000, guid: 740234aa81e1fd843982d7597582a1a2, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 70
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Spiper Venom
+    icon: {fileID: 2800000, guid: 973a14359c9a3a249b4341db1bf03e99, type: 3}
+    iconSprite: {fileID: 21300000, guid: 973a14359c9a3a249b4341db1bf03e99, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 80
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Arrow
+    icon: {fileID: 2800000, guid: 6522969866529864eafb41785e5fc24f, type: 3}
+    iconSprite: {fileID: 21300000, guid: 6522969866529864eafb41785e5fc24f, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 2
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Gel
+    icon: {fileID: 2800000, guid: b1e3c01aa63fe14478388cf80f80cbfb, type: 3}
+    iconSprite: {fileID: 21300000, guid: b1e3c01aa63fe14478388cf80f80cbfb, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 40
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Flame Stone
+    icon: {fileID: 2800000, guid: 1f1c41ee10a426a4693e96ab44d4eb95, type: 3}
+    iconSprite: {fileID: 21300000, guid: 1f1c41ee10a426a4693e96ab44d4eb95, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 70
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Goblin Insignia
+    icon: {fileID: 2800000, guid: 110d7dc1ca40d0942a0a945091543e77, type: 3}
+    iconSprite: {fileID: 21300000, guid: 110d7dc1ca40d0942a0a945091543e77, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 200
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Atk Up Potion
+    icon: {fileID: 2800000, guid: 0a4619d995c93fd4e98cd19ca81191ae, type: 3}
+    iconSprite: {fileID: 21300000, guid: 0a4619d995c93fd4e98cd19ca81191ae, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Increase Attack +1
+    description2: 
+    description3: 
+    price: 2000
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 1
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: Def Up Potion
+    icon: {fileID: 2800000, guid: c29b49f84422897459c67af763c09da9, type: 3}
+    iconSprite: {fileID: 21300000, guid: c29b49f84422897459c67af763c09da9, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Increase Defense +1
+    description2: 
+    description3: 
+    price: 2000
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 1
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: Matk Up Potion
+    icon: {fileID: 2800000, guid: e2aaed0e79d32f8478f759f98d45baa4, type: 3}
+    iconSprite: {fileID: 21300000, guid: e2aaed0e79d32f8478f759f98d45baa4, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Increase M.Attack +1
+    description2: 
+    description3: 
+    price: 2000
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 1
+    mdefPlus: 0
+    unusable: 0
+    sendMsg: 
+  - itemName: Mdef Up Potion
+    icon: {fileID: 2800000, guid: d6298d7786ea0074987feeaad95df348, type: 3}
+    iconSprite: {fileID: 21300000, guid: d6298d7786ea0074987feeaad95df348, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: Increase M.Defense +1
+    description2: 
+    description3: 
+    price: 2000
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 1
+    unusable: 0
+    sendMsg: 
+  - itemName: Magic Stone
+    icon: {fileID: 2800000, guid: bd744cbc5eb507e468072753fe40c978, type: 3}
+    iconSprite: {fileID: 21300000, guid: bd744cbc5eb507e468072753fe40c978, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 150
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Blue Gel
+    icon: {fileID: 2800000, guid: a21949fad19f97f4286d25f6174e108f, type: 3}
+    iconSprite: {fileID: 21300000, guid: a21949fad19f97f4286d25f6174e108f, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 80
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  - itemName: Bloody Trunk
+    icon: {fileID: 2800000, guid: 5477636950643b14bb57d11f59875919, type: 3}
+    iconSprite: {fileID: 21300000, guid: 5477636950643b14bb57d11f59875919, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    description: 
+    description2: 
+    description3: 
+    price: 92
+    hpRecover: 0
+    mpRecover: 0
+    atkPlus: 0
+    defPlus: 0
+    matkPlus: 0
+    mdefPlus: 0
+    unusable: 1
+    sendMsg: 
+  equipment:
+  - itemName: 
+    icon: {fileID: 0}
+    iconSprite: {fileID: 21300000, guid: 442ae440c81180847919be9ae09ecfc7, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 1
+    canBlock: 0
+    description: 
+    description2: 
+    description3: 
+    price: 10
+    weaponType: 0
+    attack: 0
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400020, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    runAnimation: {fileID: 7400004, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    rightAnimation: {fileID: 7400012, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    leftAnimation: {fileID: 7400010, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    backAnimation: {fileID: 7400028, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Steel Sword
+    icon: {fileID: 2800000, guid: 067552e2d6b3be7459101c779af7a7e7, type: 3}
+    iconSprite: {fileID: 21300000, guid: 067552e2d6b3be7459101c779af7a7e7, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100000, guid: e2e2d6909e1a71448a1721a03c93c8e5, type: 3}
+    assignAllWeapon: 1
+    canBlock: 1
+    description: ATK 5 MATK 5
+    description2: 
+    description3: 
+    price: 1000
+    weaponType: 0
+    attack: 5
+    defense: 0
+    magicAttack: 5
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: 67fe852226ef96a4bbe68da833bf9b8e, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400020, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400022, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400024, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    runAnimation: {fileID: 7400004, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    rightAnimation: {fileID: 7400012, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    leftAnimation: {fileID: 7400010, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    backAnimation: {fileID: 7400028, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 7400000, guid: 4d47d604fb7d65f409b12fdb5260cbdc, type: 3}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Falchion
+    icon: {fileID: 2800000, guid: fa5af5120ae74814d9dbbe7caaa08904, type: 3}
+    iconSprite: {fileID: 21300000, guid: fa5af5120ae74814d9dbbe7caaa08904, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100002, guid: 6d6ad06e933143d498814495ef5f8a49, type: 3}
+    assignAllWeapon: 1
+    canBlock: 1
+    description: ATK 20
+    description2: 
+    description3: 
+    price: 1600
+    weaponType: 0
+    attack: 20
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: 67fe852226ef96a4bbe68da833bf9b8e, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400020, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400022, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400024, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    runAnimation: {fileID: 7400004, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    rightAnimation: {fileID: 7400012, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    leftAnimation: {fileID: 7400010, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    backAnimation: {fileID: 7400028, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 7400000, guid: 4d47d604fb7d65f409b12fdb5260cbdc, type: 3}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Magic Blade
+    icon: {fileID: 2800000, guid: 67daeb047e4ab20418ccca2e364b960a, type: 3}
+    iconSprite: {fileID: 21300000, guid: 67daeb047e4ab20418ccca2e364b960a, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100002, guid: 03e7a74da65937147ac24f6149be5c8f, type: 3}
+    assignAllWeapon: 1
+    canBlock: 1
+    description: ATK 30 MATK 25 (Poison 40%)
+    description2: 
+    description3: 
+    price: 2600
+    weaponType: 0
+    attack: 30
+    defense: 0
+    magicAttack: 25
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: ee79e112791a312418373d1f4553eaf2, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400020, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400022, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400024, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    runAnimation: {fileID: 7400004, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    rightAnimation: {fileID: 7400012, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    leftAnimation: {fileID: 7400010, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    backAnimation: {fileID: 7400028, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 7400000, guid: 4d47d604fb7d65f409b12fdb5260cbdc, type: 3}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Fireblend
+    icon: {fileID: 2800000, guid: 230ec04caefb95f42a03791bc55992b2, type: 3}
+    iconSprite: {fileID: 21300000, guid: 230ec04caefb95f42a03791bc55992b2, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100000, guid: aeb2612ad557dbc4fb6c9df38880d819, type: 3}
+    assignAllWeapon: 1
+    canBlock: 1
+    description: ATK 5 , MATK 20
+    description2: Cast Firebolt when Attack
+    description3: 
+    price: 4200
+    weaponType: 0
+    attack: 5
+    defense: 0
+    magicAttack: 20
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100004, guid: ed1eb49e2344d524491309ba72d0b173, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400020, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400022, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400024, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    runAnimation: {fileID: 7400004, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    rightAnimation: {fileID: 7400012, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    leftAnimation: {fileID: 7400010, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    backAnimation: {fileID: 7400028, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 7400000, guid: 4d47d604fb7d65f409b12fdb5260cbdc, type: 3}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Light Armor
+    icon: {fileID: 2800000, guid: ca7c59b691f7b134abacca466f84a899, type: 3}
+    iconSprite: {fileID: 21300000, guid: ca7c59b691f7b134abacca466f84a899, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: DEF 5
+    description2: 
+    description3: 
+    price: 1200
+    weaponType: 10
+    attack: 0
+    defense: 5
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 1
+    attackPrefab: {fileID: 0}
+    attackCombo: []
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Heavy Armor
+    icon: {fileID: 2800000, guid: 2b8bb069f6ffd5447a2ae6fb2a46068c, type: 3}
+    iconSprite: {fileID: 21300000, guid: 2b8bb069f6ffd5447a2ae6fb2a46068c, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: DEF 15 , Max HP + 50
+    description2: 
+    description3: 
+    price: 2200
+    weaponType: 10
+    attack: 0
+    defense: 15
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 50
+    mpBonus: 0
+    EquipmentType: 1
+    attackPrefab: {fileID: 0}
+    attackCombo: []
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Magic Coat
+    icon: {fileID: 2800000, guid: bb7bd61326dff4548b9b60865f247690, type: 3}
+    iconSprite: {fileID: 21300000, guid: bb7bd61326dff4548b9b60865f247690, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: DEF 20 MDEF 20
+    description2: 
+    description3: 
+    price: 2200
+    weaponType: 10
+    attack: 0
+    defense: 20
+    magicAttack: 0
+    magicDefense: 20
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 1
+    attackPrefab: {fileID: 0}
+    attackCombo: []
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.12
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Bow
+    icon: {fileID: 2800000, guid: 5d24e377eacb4e44293bdd3b31ad411e, type: 3}
+    iconSprite: {fileID: 21300000, guid: 5d24e377eacb4e44293bdd3b31ad411e, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100000, guid: 4c34700efa00b494ab2128a3a0c9c672, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 5 (Long Range)
+    description2: 
+    description3: 
+    price: 1000
+    weaponType: 1
+    attack: 5
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 8300000, guid: 7397cccde826d4541a19172adc82dd1d, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 8
+  - itemName: Hunter Bow
+    icon: {fileID: 2800000, guid: c11407efe1df7204fa0266412f1f2010, type: 3}
+    iconSprite: {fileID: 21300000, guid: c11407efe1df7204fa0266412f1f2010, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100000, guid: ebfea756a460c5d42abc80729efc9a25, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 11 (Long Range)
+    description2: 
+    description3: 
+    price: 1600
+    weaponType: 1
+    attack: 11
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 8300000, guid: 7397cccde826d4541a19172adc82dd1d, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 8
+  - itemName: Battle Bow
+    icon: {fileID: 2800000, guid: e7e5bfc2155c7fd4b97ebc6e55435ad6, type: 3}
+    iconSprite: {fileID: 21300000, guid: e7e5bfc2155c7fd4b97ebc6e55435ad6, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100000, guid: bc77afd2c73eb52449c52b0dd7d66ca7, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 18 (Long Range)
+    description2: 
+    description3: 
+    price: 2600
+    weaponType: 1
+    attack: 18
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 8300000, guid: 7397cccde826d4541a19172adc82dd1d, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 8
+  - itemName: War Bow
+    icon: {fileID: 2800000, guid: 0f9554ed687d98f479df73cbf1cef958, type: 3}
+    iconSprite: {fileID: 21300000, guid: 0f9554ed687d98f479df73cbf1cef958, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 100000, guid: 0653a7478c19e4d4d9842947dba47c35, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 25 (Long Range)
+    description2: 
+    description3: 
+    price: 4200
+    weaponType: 1
+    attack: 25
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 8300000, guid: 7397cccde826d4541a19172adc82dd1d, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 8
+  - itemName: Crystal Staff
+    icon: {fileID: 2800000, guid: bb17db05889b66e4894d04d783176078, type: 3}
+    iconSprite: {fileID: 21300000, guid: bb17db05889b66e4894d04d783176078, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 1527189803521276, guid: 46bcfb023863d9b4c8758ac4a52a8e09, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 5 MATK 10
+    description2: 
+    description3: 
+    price: 1000
+    weaponType: 0
+    attack: 5
+    defense: 0
+    magicAttack: 10
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: f8658e0be2665274fba308c716834c98, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.2
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Eclipse Staff
+    icon: {fileID: 2800000, guid: 6032ca41a7bb87e43a97d98ca6995a50, type: 3}
+    iconSprite: {fileID: 21300000, guid: 6032ca41a7bb87e43a97d98ca6995a50, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 1539898556930728, guid: 3ff15e0268e88504a8756dbaa2480568, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 5 MATK 20
+    description2: 
+    description3: 
+    price: 1600
+    weaponType: 0
+    attack: 5
+    defense: 0
+    magicAttack: 20
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: f8658e0be2665274fba308c716834c98, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.2
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Enigma Staff
+    icon: {fileID: 2800000, guid: e2b94c488d756fd48b341e308fac2cb0, type: 3}
+    iconSprite: {fileID: 21300000, guid: e2b94c488d756fd48b341e308fac2cb0, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 1690773213626926, guid: 5ad22f8a20f4c2648894ff25eab9bbea, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 5 MATK 30
+    description2: 
+    description3: 
+    price: 2600
+    weaponType: 0
+    attack: 5
+    defense: 0
+    magicAttack: 30
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: f8658e0be2665274fba308c716834c98, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.2
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Winged Staff
+    icon: {fileID: 2800000, guid: 30664d81296658d47816eda169924b21, type: 3}
+    iconSprite: {fileID: 21300000, guid: 30664d81296658d47816eda169924b21, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 1837215618891408, guid: c1fbf693a12be0f4ca9056f0116c96ed, type: 3}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK 5 MATK 45
+    description2: 
+    description3: 
+    price: 4200
+    weaponType: 0
+    attack: 5
+    defense: 0
+    magicAttack: 45
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 0
+    attackPrefab: {fileID: 100000, guid: f8658e0be2665274fba308c716834c98, type: 3}
+    attackCombo:
+    - {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    - {fileID: 7400018, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    idleAnimation: {fileID: 7400002, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    runAnimation: {fileID: 7400004, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    rightAnimation: {fileID: 7400008, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    leftAnimation: {fileID: 7400006, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    backAnimation: {fileID: 7400012, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    jumpAnimation: {fileID: 7400002, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    jumpUpAnimation: {fileID: 7400000, guid: 814e376373ca8a1428e790bf128eef63, type: 3}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 0
+    attackSpeed: 0.18
+    attackDelay: 0.2
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Double Jump
+    icon: {fileID: 2800000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    iconSprite: {fileID: 21300000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: Can perform double jump.
+    description2: 
+    description3: 
+    price: 3000
+    weaponType: 1
+    attack: 0
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 2
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 1
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Auto Guard
+    icon: {fileID: 2800000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    iconSprite: {fileID: 21300000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: 20% chance to Guard
+    description2: 
+    description3: 
+    price: 3000
+    weaponType: 1
+    attack: 0
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 2
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 20
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Vampire Ring
+    icon: {fileID: 2800000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    iconSprite: {fileID: 21300000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: Drain 10% HP
+    description2: 
+    description3: 
+    price: 3000
+    weaponType: 1
+    attack: 0
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 2
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 10
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Magic Ring
+    icon: {fileID: 2800000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    iconSprite: {fileID: 21300000, guid: 6c672694a580c3543a22da542bf947a5, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: Reduce MP usage 30&
+    description2: 
+    description3: 
+    price: 3000
+    weaponType: 1
+    attack: 0
+    defense: 0
+    magicAttack: 0
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 2
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 30
+    requireItemId: 0
+  - itemName: Ribbon
+    icon: {fileID: 2800000, guid: e4bf028cec586074ebc1fa8ffe1d6e7e, type: 3}
+    iconSprite: {fileID: 21300000, guid: e4bf028cec586074ebc1fa8ffe1d6e7e, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: DEF +5 , MDEF +5
+    description2: 
+    description3: 
+    price: 1000
+    weaponType: 1
+    attack: 0
+    defense: 5
+    magicAttack: 0
+    magicDefense: 5
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 3
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Helm
+    icon: {fileID: 2800000, guid: a48c19f3403246340917f7f61359682c, type: 3}
+    iconSprite: {fileID: 21300000, guid: a48c19f3403246340917f7f61359682c, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: DEF +10 , MDEF +10
+    description2: 
+    description3: 
+    price: 3000
+    weaponType: 1
+    attack: 0
+    defense: 10
+    magicAttack: 0
+    magicDefense: 10
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 3
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Iron Gloves
+    icon: {fileID: 2800000, guid: 73c8801ea7551fe4fb14037e9a8cfa3f, type: 3}
+    iconSprite: {fileID: 21300000, guid: 73c8801ea7551fe4fb14037e9a8cfa3f, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: ATK +5 , MATK +5
+    description2: 
+    description3: 
+    price: 1500
+    weaponType: 1
+    attack: 5
+    defense: 0
+    magicAttack: 5
+    magicDefense: 0
+    hpBonus: 0
+    mpBonus: 0
+    EquipmentType: 4
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0
+  - itemName: Iron Boots
+    icon: {fileID: 2800000, guid: ae8948fc1c6c915429334b027a2fa47a, type: 3}
+    iconSprite: {fileID: 21300000, guid: ae8948fc1c6c915429334b027a2fa47a, type: 3}
+    spriteColor: {r: 1, g: 1, b: 1, a: 1}
+    model: {fileID: 0}
+    assignAllWeapon: 0
+    canBlock: 0
+    description: DEF +5 , MDEF +5
+    description2: HP +100
+    description3: 
+    price: 2500
+    weaponType: 1
+    attack: 0
+    defense: 5
+    magicAttack: 0
+    magicDefense: 5
+    hpBonus: 100
+    mpBonus: 0
+    EquipmentType: 5
+    attackPrefab: {fileID: 0}
+    attackCombo:
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    - {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    idleAnimation: {fileID: 0}
+    runAnimation: {fileID: 0}
+    rightAnimation: {fileID: 0}
+    leftAnimation: {fileID: 0}
+    backAnimation: {fileID: 0}
+    jumpAnimation: {fileID: 0}
+    jumpUpAnimation: {fileID: 0}
+    blockingAnimation: {fileID: 0}
+    whileAttack: 1
+    attackSpeed: 0.24
+    attackDelay: 0.18
+    soundEffect: {fileID: 0}
+    statusResist:
+      poisonResist: 0
+      silenceResist: 0
+      webResist: 0
+      stunResist: 0
+    canDoubleJump: 0
+    autoGuard: 0
+    drainTouch: 0
+    mpReduce: 0
+    requireItemId: 0

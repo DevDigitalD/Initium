@@ -42,7 +42,7 @@ namespace GameCore.Character
         {
             yield return new WaitForSeconds(delay);
 
-            stats.TakeDamage(_myStats.Damage);
+            //stats.TakeDamage(_myStats.Damage);
         }
     }
 }

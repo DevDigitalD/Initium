@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Android;
 
 namespace GameCore.Character.PlayerCharacter
 {
@@ -12,6 +10,7 @@ namespace GameCore.Character.PlayerCharacter
         [SerializeField] private float _speed;
         [SerializeField] private float _turnSmoothTime = 0.1f;
         private CharacterController _characterController;
+        private Animator _animator;
         private float _turnSmoothVelocity;
 
         private void Awake()

@@ -4,7 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Mount
   - Enemy
+  - Joystick
+  - Ally
+  - Water
+  - Wall
+  - Minimap
+  - Collide
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -14,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Minimap
+  - MinimapOnly
   - 
   - 
   - 
