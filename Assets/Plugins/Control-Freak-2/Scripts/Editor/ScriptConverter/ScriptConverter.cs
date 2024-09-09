@@ -57,7 +57,7 @@ public class ScriptConverter : EditorWindow
 
 
 	// ----------------------
-	[MenuItem("Control Freak 2/CF2 Script Converter")]
+	[MenuItem("Tools/Control Freak 2/CF2 Script Converter")]
 	static void ShowScriptConverter()
 		{
 
@@ -1320,7 +1320,7 @@ public class ScriptConverter : EditorWindow
 				Color initialBgColor = GUI.backgroundColor;
 				GUI.backgroundColor = bgColor;
 
-				GUILayout.Label(new GUIContent("Line " + frag.line.ToString().PadLeft(4) + ": " + frag.originalFrag + 
+				GUILayout.Label(new GUIContent("Line " + frag.line.ToString().PadLeft(4) + ": " + frag.fullOriginalFrag + 
 					((frag.problem != ConvertedScript.ProblemType.None) ? (" <i>("  + UnderscoresToSpaces(frag.problem.ToString()) + ")</i>") : 
 					(frag.warning != ConvertedScript.WarningType.None) ? (" <i>(" + UnderscoresToSpaces(frag.warning.ToString()) + ")</i>") : "")), 	
 					CFEditorStyles.Inst.scriptFragInfoBG);
@@ -1442,7 +1442,7 @@ public class ScriptConverter : EditorWindow
 
 		
 	// -----------------
-	[MenuItem("Control Freak 2/Prepare First-Pass JavaScripts for conversion.")]
+//	[MenuItem("Control Freak 2/Prepare First-Pass JavaScripts for conversion.")]
 	static public void CheckForRelevantFirstPassJavaScripts()
 		{
 		//if (EditorUtility.DisplayCancelableProgressBar(DIALOG_TITLE, "Looking for First-Pass JavaScripts...", 0.2f))

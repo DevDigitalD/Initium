@@ -62,7 +62,7 @@ public class TouchJoystickSpriteAnimatorInspector : UnityEditor.Editor
 
 
 			
-		if (!TouchControlSpriteAnimatorInspector.DrawSourceGUI(target))
+		if (!ControlSprAnimatorInspector.DrawSourceGUI(target))
 			return;
 
 

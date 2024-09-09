@@ -630,10 +630,13 @@ string[] keycodeParams = new string[]
 			if (!this.IsTypeSupported(typeName))
 				return null;
 	
-			Fragment frag = new Fragment(ModType.InputType, m);
+			Fragment frag = new Fragment(ModType.InputType, m, m);
 		
 			frag.originalFrag	= script.GetOriginalCaptureValue(m);
 			frag.modifiedFrag	= script.GetOriginalCaptureValue(m);
+			frag.fullOriginalFrag	= script.GetOriginalCaptureValue(m);
+			frag.fullModifiedFrag	= script.GetOriginalCaptureValue(m);
+
 			frag.usedClass		= m.Groups["namespace"].Value;
 			frag.usedFunction	= typeName;
 	
@@ -666,6 +669,10 @@ string[] keycodeParams = new string[]
 					}
 				}		
 //return null;
+	
+			frag.fullOriginalFrag = frag.originalFrag;
+			frag.fullModifiedFrag = frag.modifiedFrag;
+
 			return frag;
 			}
 				
@@ -732,11 +739,28 @@ string[] keycodeParams = new string[]
 		// -------------------
 		abstract public bool IsMethodSupported		(string name);	//	{ return (this.GetMethodDesc(name) != null); }
 		abstract public bool IsMethodIgnored		(string name);	//	{ return FindStringInArray(this.GetIgnoredMethods(), name); }
-		abstract public ProblemType IsMethodUnsupported	(string name);	//	{ return
+
+		// -----------------
+		virtual public ProblemType IsMethodUnsupported	(string name)
+			{
+			if (!IsMethodSupported(name)) 
+				return ProblemType.Unsupported_Method;
+			
+			return ProblemType.None;
+			}
+			
  
 		abstract public bool IsPropertySupported	(string name);	//	{ return FindStringInArray(this.GetSupportedProperties(), name); }
 		abstract public bool IsPropertyIgnored		(string name);	//	{ return FindStringInArray(this.GetIgnoredProperties(), name); }
-		abstract public ProblemType IsPropertyUnsupported	(string name);	//	{ return
+
+		// -----------------
+		virtual public ProblemType IsPropertyUnsupported	(string name)
+			{
+			if (!IsPropertySupported(name))
+				return ProblemType.Unsupported_Property;
+
+			return ProblemType.None;
+			}
 	
 
 
@@ -753,11 +777,17 @@ string[] keycodeParams = new string[]
 			string methodName = script.GetOriginalCaptureValue(m.Groups["method"]); //.Value;
 			if (this.IsMethodIgnored(methodName))
 				return null;	
+			if (this.IsMethodUnsupported(methodName) != ProblemType.None) 
+				return null;
 	
-			Fragment frag = new Fragment(this.GetMethodModType(), m);
+			var classCaptureGroup = m.Groups["class"];
+			if (!classCaptureGroup.Success || (classCaptureGroup.Captures.Count != 1))
+				return null;	// ??!
+
+			Fragment frag = new Fragment(this.GetMethodModType(), m, classCaptureGroup);
 		
-			frag.originalFrag	= script.GetOriginalCaptureValue(m); //.Value;
-			frag.modifiedFrag	= script.GetOriginalCaptureValue(m); //.Value;
+			frag.originalFrag	= script.GetOriginalCaptureValue(classCaptureGroup); //.Value;
+			frag.modifiedFrag	= this.GetConvertedClassName(); //script.GetOriginalCaptureValue(m); //.Value;
 			frag.usedClass		= script.GetOriginalCaptureValue(m.Groups["class"]); //.Value;
 			frag.usedFunction	= methodName;
 			frag.usedParameter	= script.GetOriginalCaptureValue(m.Groups["params"]); //.Value;
@@ -787,22 +817,22 @@ string[] keycodeParams = new string[]
 	
 			if ((frag.problem == ProblemType.None) && (frag.warning == ConvertedScript.WarningType.None))
 				{
-				frag.modifiedFrag = "";
+				frag.fullModifiedFrag = "";
 				
 				for (int i = 1; i < m.Groups.Count; ++i)
 					{
 					string groupName = regex.GroupNameFromNumber(i);
 					if (groupName == "class")
-						frag.modifiedFrag += this.GetConvertedClassName();
+						frag.fullModifiedFrag += this.GetConvertedClassName();
 		
 					else if (groupName == "method")
-						frag.modifiedFrag += frag.usedFunction;
+						frag.fullModifiedFrag += frag.usedFunction;
 		
 					else if (groupName == "params")
-						frag.modifiedFrag += frag.usedParameter;
+						frag.fullModifiedFrag += frag.usedParameter;
 		
 					else 
-						frag.modifiedFrag += script.GetOriginalCaptureValue(m.Groups[i]); //.Value;			
+						frag.fullModifiedFrag += script.GetOriginalCaptureValue(m.Groups[i]); //.Value;			
 		
 		//Debug.Log("\t\tgr["+i+"]["+groupName+"] \t["  + m.Groups[i].Value + "] \t->[" + frag.modifiedFrag + "]");
 					}
@@ -819,11 +849,15 @@ string[] keycodeParams = new string[]
 			string propertyName = script.GetOriginalCaptureValue(m.Groups["prop"]); //.Value;
 			if (this.IsPropertyIgnored(propertyName))
 				return null;
+
+			var classCaptureGroup = m.Groups["class"];
+			if (!classCaptureGroup.Success || (classCaptureGroup.Captures.Count != 1))
+				return null;	// ??!
 	
-			Fragment frag = new Fragment(this.GetPropModType(), m);
+			Fragment frag = new Fragment(this.GetPropModType(), m, classCaptureGroup);
 		
-			frag.originalFrag	= script.GetOriginalCaptureValue(m); //.Value;
-			frag.modifiedFrag	= script.GetOriginalCaptureValue(m); //.Value;
+			frag.originalFrag	= script.GetOriginalCaptureValue(classCaptureGroup); 
+			frag.modifiedFrag	= this.GetConvertedClassName(); 
 			frag.usedClass		= m.Groups["class"].Value;
 			frag.usedFunction	= propertyName;
 	
@@ -841,15 +875,15 @@ string[] keycodeParams = new string[]
 				
 			if ((frag.problem == ProblemType.None) && (frag.warning == ConvertedScript.WarningType.None))
 				{
-				frag.modifiedFrag = "";
+				frag.fullModifiedFrag = "";
 		
 				for (int i = 1; i < m.Groups.Count; ++i)
 					{
 					string groupName = regex.GroupNameFromNumber(i);
 					if (groupName == "class")
-						frag.modifiedFrag += this.GetConvertedClassName();
+						frag.fullModifiedFrag += this.GetConvertedClassName();
 					else 
-						frag.modifiedFrag += script.GetOriginalCaptureValue(m.Groups[i]); //.Value;			
+						frag.fullModifiedFrag += script.GetOriginalCaptureValue(m.Groups[i]); //.Value;			
 					}
 				}		
 			
@@ -946,8 +980,8 @@ string[] keycodeParams = new string[]
 			{
 			if (FindStringInArray(mControlFreak1Methods, name))
 				return ProblemType.Control_Freak_1_Feature;
-
-			return ProblemType.None;
+	
+			return base.IsMethodUnsupported(name);
 			} 
 
 
@@ -957,7 +991,7 @@ string[] keycodeParams = new string[]
 			if (FindStringInArray(mControlFreak1Props, name))
 				return ProblemType.Control_Freak_1_Feature;
 
-			return ProblemType.None;
+			return base.IsPropertyUnsupported(name);
 			}
 
 
@@ -1085,8 +1119,8 @@ string[] keycodeParams = new string[]
 		override public bool IsPropertySupported	(string name)	{ return FindStringInArray(mSupportedProps, name); }
 		override public bool IsPropertyIgnored		(string name)	{ return FindStringInArray(mIgnoredProps, name); }
 
-		override public ProblemType IsMethodUnsupported		(string name)	{ return ProblemType.None; } 
-		override public ProblemType IsPropertyUnsupported	(string name)	{ return ProblemType.None; }
+		//override public ProblemType IsMethodUnsupported		(string name)	{ return ProblemType.None; } 
+		//override public ProblemType IsPropertyUnsupported	(string name)	{ return ProblemType.None; }
 	
 
 		// ---------------------
@@ -1172,8 +1206,6 @@ string[] keycodeParams = new string[]
 		override public bool IsPropertySupported	(string name)	{ return FindStringInArray(mSupportedProps, name); }
 		override public bool IsPropertyIgnored		(string name)	{ return FindStringInArray(mIgnoredProps, name); }
 
-		override public ProblemType IsMethodUnsupported		(string name)	{ return ProblemType.None; } 
-		override public ProblemType IsPropertyUnsupported	(string name)	{ return ProblemType.None; }
 	
 
 		// ---------------------
@@ -1854,7 +1886,11 @@ string[] keycodeParams = new string[]
 					originalPos = frag.filePos;	
 					}
 					
-				this.modifiedCode.Append(frag.modifiedFrag);			
+				if (frag.IsValid())
+					this.modifiedCode.Append(frag.modifiedFrag);			
+				else
+					this.modifiedCode.Append(frag.originalFrag);
+
 				originalPos = frag.filePos + frag.originalFrag.Length;
 					 
 				++curFragId;
@@ -1948,6 +1984,8 @@ string[] keycodeParams = new string[]
 		public ModType		modType;
 		public string		originalFrag;
 		public string		modifiedFrag;
+		public string		fullOriginalFrag;		// Full capture
+		public string		fullModifiedFrag;		// Full modified capture
 		public string		usedClass;
 		public string		usedFunction;
 		public string		usedParameter;
@@ -1956,13 +1994,23 @@ string[] keycodeParams = new string[]
 		public int			filePos;
 	
 		
+		// ---------------
+		public bool IsValid()
+			{
+			return ((this.problem == ProblemType.None) && (this.warning == WarningType.None));
+			}
 	
 		// --------------------
-		public Fragment(ModType modType, Match match)
+		public Fragment(ModType modType, Match match, Capture classCapture)
 			{
 			this.modType = modType;	
-			this.filePos = match.Index;
-			this.originalFrag = match.Value;	
+			this.filePos = classCapture.Index;
+			this.originalFrag = classCapture.Value;	
+			this.modifiedFrag = this.originalFrag;
+
+			this.fullOriginalFrag = match.Value;
+			this.fullModifiedFrag = this.fullOriginalFrag;
+
 	
 	//			this.filePos = match
 			}
@@ -1991,7 +2039,7 @@ string[] keycodeParams = new string[]
 					break;
 
 				default :
-					s += "Other mod.\t[" + this.originalFrag.Replace("\n", " ") + "]";
+					s += "Other mod.\t[" + this.fullOriginalFrag.Replace("\n", " ") + "]";
 					break;
 				}
 

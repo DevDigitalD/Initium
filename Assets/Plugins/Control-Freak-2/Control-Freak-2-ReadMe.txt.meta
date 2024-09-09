@@ -6,3 +6,10 @@ TextScriptImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Control-Freak-2-ReadMe.txt
+  uploadId: 662733

@@ -696,6 +696,10 @@ public abstract class TouchControl : ControlFreak2.Internal.ComponentBase, IBind
 	// -------------------
 	protected Vector3 ScreenToWorldPos(Vector2 sp, Camera cam)
 		{
+		Vector2 localPos;
+		RectTransformUtility.ScreenPointToLocalPointInRectangle(this.transform as RectTransform, sp, cam, out localPos);
+		return this.transform.TransformPoint(localPos);
+#if false
 		Transform tr = this.transform;
 
 		Vector3 sp3 = sp;
@@ -729,6 +733,7 @@ public abstract class TouchControl : ControlFreak2.Internal.ComponentBase, IBind
 			}
 
 		return sp3;
+#endif
 		}
 		
 

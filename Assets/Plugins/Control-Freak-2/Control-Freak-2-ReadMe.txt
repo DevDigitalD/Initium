@@ -1,6 +1,6 @@
 -------------------------------------------
-Control Freak 2 (2.8.9)
-Copyright (C) 2013-2023 Dan's Game Tools
+Control Freak 2 (2.8.10)
+Copyright (C) 2013-2024 Dan's Game Tools
 http://DansGameTools.blogspot.com
 -------------------------------------------
 
@@ -9,14 +9,24 @@ Online documentation:
 https://dansgametools.blogspot.com/p/docs.html
 
 
+WARNING:
 
-Warning:
+Some script file names were shortened in version 2.8.10. In case of any problems during update, please create a new empty scene, unload any other scenes, then delete /Plugins/Control-Freak-2/Scripts/ directory and import latest Control Freak 2 package for a clean update.
+
+
+WARNNG:
 
 For some unknown reasons, touch controls may not show up when playing on devices with certain mobile GPUs.
 When this happens, please check if your rig is using UI Images with custom materials. Removing these materials fixes the issue.
 You can do this automatically by right-clicking on InputRig's component title and picking the dedicated command.
 
 
+
+Version 2.8.10
+
+	Fixed Script Converter's "parameter bug".
+	Fixed Camera-Space and World-space canvas mode support.
+	Changed main menu item structure - now it's main menu -> Tools -> Control Freak 2.
 
 
 Version 2.8.9

@@ -77,3 +77,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Level-Elements/WallPanel_D.png
+  uploadId: 662733

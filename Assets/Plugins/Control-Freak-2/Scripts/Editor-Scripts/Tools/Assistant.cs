@@ -60,7 +60,7 @@ public class Assistant : EditorWindow
 		
 
 	// ---------------------
-	[MenuItem("Control Freak 2/CF2 Assistant")]
+	[MenuItem("Tools/Control Freak 2/CF2 Assistant")]
 	static void ShowListenerMenuItem()
 		{ ShowListener(true); }
 

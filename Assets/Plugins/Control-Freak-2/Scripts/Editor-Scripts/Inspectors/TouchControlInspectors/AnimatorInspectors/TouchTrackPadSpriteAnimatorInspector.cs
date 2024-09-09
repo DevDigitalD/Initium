@@ -44,7 +44,7 @@ public class TouchTrackPadSpriteAnimatorInspector : UnityEditor.Editor
 		if ((target == null))
 			return;
 			
-		if (!TouchControlSpriteAnimatorInspector.DrawSourceGUI(target))
+		if (!ControlSprAnimatorInspector.DrawSourceGUI(target))
 			return;
 
 //		TouchControlSpriteAnimatorInspector.DrawTimingGUI(target);

@@ -183,7 +183,7 @@ public class Installer : EditorWindow
 
 
 	// --------------------
-	[MenuItem("Control Freak 2/CF2 Installer")]
+	[MenuItem("Tools/Control Freak 2/CF2 Installer")]
 	static public void ShowInstallerWindow()
 		{
 		GetWindow<ControlFreak2Editor.Installer>(true, DIALOG_SHORT_TITLE, true);

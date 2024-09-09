@@ -144,19 +144,19 @@ public class TouchControlPanel : ControlFreak2.Internal.ComponentBase
 
 
 #if UNITY_EDITOR
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Emulate Low-Res TouchScreen/Off", true, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Emulate Low-Res TouchScreen/Off", true, 100)]
 	static private bool IsTouchScreenEmuOff() { return !(mSkipTouchScreenPixels <= 0); }
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Emulate Low-Res TouchScreen/Off", false, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Emulate Low-Res TouchScreen/Off", false, 100)]
 	static private void TurnOffTouchScreenDegradation() { mSkipTouchScreenPixels = 0; }
 
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (4 pixels)", true, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (4 pixels)", true, 100)]
 	static private bool IsTouchScreenEmuOn() { return !(mSkipTouchScreenPixels == 3); }
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (4 pixels)", false, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (4 pixels)", false, 100)]
 	static private void TurnOnTouchScreenDegradation() { mSkipTouchScreenPixels = 3; }
 
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (8 pixels)", true, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (8 pixels)", true, 100)]
 	static private bool IsTouchScreenEmuOn8() { return !(mSkipTouchScreenPixels == 7); }
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (8 pixels)", false, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Emulate Low-Res TouchScreen/On (8 pixels)", false, 100)]
 	static private void TurnOnTouchScreenDegradation8() { mSkipTouchScreenPixels = 7; }
 
 #endif

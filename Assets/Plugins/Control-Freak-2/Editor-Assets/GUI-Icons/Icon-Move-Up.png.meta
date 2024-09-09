@@ -54,3 +54,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Editor-Assets/GUI-Icons/Icon-Move-Up.png
+  uploadId: 662733

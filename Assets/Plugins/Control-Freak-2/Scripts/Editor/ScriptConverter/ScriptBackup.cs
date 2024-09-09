@@ -46,7 +46,7 @@ public class ScriptBackup : EditorWindow
 	
 
 	// --------------------
-	[MenuItem("Control Freak 2/CF2 Script Backup Restore")]
+	[MenuItem("Tools/Control Freak 2/CF2 Script Backup Restore")]
 	static public void ShowDialog()
 		{
 		ScriptBackup w = GetWindow<ScriptBackup>(true, "CF2 Script Backup", true);

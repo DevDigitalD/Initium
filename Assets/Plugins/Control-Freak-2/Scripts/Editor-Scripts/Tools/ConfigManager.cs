@@ -257,7 +257,10 @@ public class ConfigManager : EditorWindow
 
 	// ----------
 	static public void RemoveSymbol(string symbol, UnityEditor.BuildTargetGroup tgt)
-		{	
+		{
+		if (!IsBuildTargetGroupSupported(tgt))
+			return;
+		
 		string symbolsStr = "";
 
 		string[] symbols = GetSymbols(tgt);

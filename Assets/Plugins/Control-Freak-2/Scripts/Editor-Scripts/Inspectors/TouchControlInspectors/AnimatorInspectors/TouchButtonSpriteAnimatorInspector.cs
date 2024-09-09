@@ -51,7 +51,7 @@ public class TouchButtonSpriteAnimatorInspector : UnityEditor.Editor
 		
 
 
-		if (!TouchControlSpriteAnimatorInspector.DrawSourceGUI(target))
+		if (!ControlSprAnimatorInspector.DrawSourceGUI(target))
 			return;
 
 

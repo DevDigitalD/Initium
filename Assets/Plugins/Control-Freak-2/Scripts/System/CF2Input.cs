@@ -513,19 +513,19 @@ static public class CF2Input
 	
 
 #if UNITY_EDITOR
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Mobile Mode/Automatic", true, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Mobile Mode/Automatic", true, 100)]
 	static private bool SetMoblieModeToAutoValidator() { return (GetMobileMode() != MobileMode.Auto); }
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Mobile Mode/Automatic", false, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Mobile Mode/Automatic", false, 100)]
 	static private void SetMoblieModeToAuto() { SetMobileMode(MobileMode.Auto); }
 
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Mobile Mode/On", true, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Mobile Mode/On", true, 100)]
 	static private bool SetMoblieModeToOnValidator() { return (GetMobileMode() != MobileMode.Enabled); }
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Mobile Mode/On", false, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Mobile Mode/On", false, 100)]
 	static private void SetMoblieModeToOn() { SetMobileMode(MobileMode.Enabled); }
 
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Mobile Mode/Off", true, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Mobile Mode/Off", true, 100)]
 	static private bool SetMoblieModeToOffValidator() { return (GetMobileMode() != MobileMode.Disabled); }
-	[UnityEditor.MenuItem("Control Freak 2/Tools/Mobile Mode/Off", false, 100)]
+	[UnityEditor.MenuItem("Tools/Control Freak 2/Tools/Mobile Mode/Off", false, 100)]
 	static private void SetMoblieModeToOff() { SetMobileMode(MobileMode.Disabled); }
 
 #endif

@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: CharactersTemplate
   m_EditorClassIdentifier: 
   CharacterTemplates:
-  - Type: 0
+  - Prefab: {fileID: 0}
+    Type: 0
     Health: 5
     Damage: 1
     Armor: 1
-  - Type: 2
+  - Prefab: {fileID: 0}
+    Type: 2
     Health: 5
     Damage: 2
     Armor: 3
