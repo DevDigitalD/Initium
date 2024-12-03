@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-namespace GameCore.AppInitialization
+namespace GameCore.Root
 {
     public abstract class InitializationStepBase
     {
-        private readonly AppInitialization _appInitialization;
+        private readonly Root.GameInitialization _gameInitialization;
         protected bool DEBUG_MODE => true;
 
-        protected InitializationStepBase(AppInitialization appInitialization)
+        protected InitializationStepBase(Root.GameInitialization gameInitialization)
         {
-            _appInitialization = appInitialization;
+            _gameInitialization = gameInitialization;
         }
 
         public abstract void RunStep();
@@ -23,14 +23,14 @@ namespace GameCore.AppInitialization
             Dispose();
             
             Debug.Log($"{GetType()} complete with time {Time.time}");
-            _appInitialization.NextStep();
+            _gameInitialization.NextStep();
         }
 
         protected void RepeatStep()
         {
             Dispose();
             
-            _appInitialization.RepeatStep();
+            _gameInitialization.RepeatStep();
         }
     }
 }

@@ -7,6 +7,7 @@ namespace GameCore.ObjectPoolSystem
     {
         private const string OBJECT_POOL_CONFIG_PATH = "GameConfig/ObjectPool/ObjectPoolConfig";
         private Dictionary<string, Queue<GameObject>> _poolDictionary;
+        private ObjectPoolConfig _objectPoolConfig;
     
         // [System.Serializable]
         // public class Pool
@@ -20,15 +21,14 @@ namespace GameCore.ObjectPoolSystem
 
         public void Init()
         {
-            
+            _objectPoolConfig = Resources.Load<ObjectPoolConfig>(OBJECT_POOL_CONFIG_PATH);
         }
         
         private void Start()
         {
-            var poolConfig = Resources.Load<ObjectPoolConfig>(OBJECT_POOL_CONFIG_PATH);
             _poolDictionary = new Dictionary<string, Queue<GameObject>>();
 
-            foreach (var pool in poolConfig.Samples)
+            foreach (var pool in _objectPoolConfig.Samples)
             {
                 var objectPool = new Queue<GameObject>();
 

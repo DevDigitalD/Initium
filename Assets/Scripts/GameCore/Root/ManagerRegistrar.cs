@@ -4,7 +4,7 @@ using GameCore.Character;
 using GameCore.Character.Manager;
 using GameCore.HealthSystem;
 
-namespace GameCore.AppInitialization
+namespace GameCore.Root
 {
     public class ManagerRegistrar
     {

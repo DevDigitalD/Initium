@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using ManagersCore;
 using ManagersCore.IoC;
@@ -7,11 +6,11 @@ using ManagersCore.MessageSystem;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace GameCore.AppInitialization
+namespace GameCore.Root
 {
-    public class AppInitialization : IDisposable
+    public class GameInitialization : IDisposable
     {
-        private readonly GameObject _appGo;
+        private readonly GameObject _rootGameObject;
         private readonly MessagingManager _messenger;
         private readonly List<IManager> _managersList;
         private const bool DEBUG_MODE = true;
@@ -20,9 +19,9 @@ namespace GameCore.AppInitialization
         private IList<InitializationStepBase> _initializationSteps;
         private int _currentStepIndex;
 
-        public AppInitialization(GameObject appGo)
+        public GameInitialization(GameObject rootGameObject)
         {
-            _appGo = appGo;
+            _rootGameObject = rootGameObject;
             _managersList = new List<IManager>();
             
             InitializeManagers();
@@ -53,7 +52,7 @@ namespace GameCore.AppInitialization
             if (implementation.IsSubclassOf(typeof(MonoBehaviour)))
             {
                 var gameObject = new GameObject(implementation.Name);
-                gameObject.transform.SetParent(_appGo.transform);
+                gameObject.transform.SetParent(_rootGameObject.transform);
                 Component component = gameObject.AddComponent(implementation);
                 instance = component as IManager;
             }
