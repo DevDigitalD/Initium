@@ -33,10 +33,8 @@ namespace GameCore.AppInitialization
         {
             _managerRegistrar = new ManagerRegistrar();
             
-            foreach (KeyValuePair<Type, Type> managerTypes in _managerRegistrar.ManagersType)
+            foreach (var (implementationType, bindType) in _managerRegistrar.ManagersType)
             {
-                Type implementationType = managerTypes.Key;
-                Type bindType = managerTypes.Value;
                 CreateAndBindManagerImplementation(implementationType, bindType);
             }
         }

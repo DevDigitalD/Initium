@@ -1,17 +1,18 @@
+using GameCore.Character;
 using UnityEngine;
 
 namespace GameCore.HealthSystem
 {
-    public class HealthManager : MonoBehaviour
+    public class HealthManager : MonoBehaviour, ICharacterManager
     {
-        // Start is called before the first frame update
-        void Start()
+        public void Init()
         {
+            
         }
 
-        // Update is called once per frame
-        void Update()
+        public void Release()
         {
+            
         }
     }
 }

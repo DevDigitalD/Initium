@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace GameCore.Character
+namespace GameCore.Character.Manager
 {
     public class CharacterManager : MonoBehaviour, ICharacterManager
     {
