@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1913539485363234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4054418032814334}
+  - component: {fileID: 114890427069531884}
+  - component: {fileID: 114113365060294282}
+  m_Layer: 0
+  m_Name: SummonFirebirdC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4054418032814334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913539485363234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 261.91324, y: 2.4, z: 178.70297}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114890427069531884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913539485363234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93be9d65ae07c9a439fe7cbf09529bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageMax: 20
+  playerAttack: 5
+  totalDamage: 0
+  variance: 15
+  criticalChance: 0
+  shooterTag: Player
+  shooter: {fileID: 0}
+  Popup: {fileID: 400000, guid: 874eb43b6eb6da64e9a6a8a5c07f65f5, type: 3}
+  hitEffect: {fileID: 0}
+  flinch: 0
+  penetrate: 0
+  AttackType: 0
+  element: 0
+  drainHp: 0
+  bombHitSetting:
+    enable: 0
+    bombEffect: {fileID: 0}
+    bombRadius: 20
+--- !u!114 &114113365060294282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913539485363234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6d1ddb87c83154ab9e95345afb4d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petPrefab: {fileID: 1892872214414478, guid: 5e502deab7c714d43a759137ad743316, type: 3}
+  additionY: 0.9
+  autoSetLvStatus: 1
+  maxLevel: 100
+  minStatus:
+    atk: 3
+    def: 2
+    matk: 7
+    mdef: 5
+    maxHealth: 180
+    maxMana: 180
+  maxStatus:
+    atk: 250
+    def: 102
+    matk: 395
+    mdef: 105
+    maxHealth: 3800
+    maxMana: 100

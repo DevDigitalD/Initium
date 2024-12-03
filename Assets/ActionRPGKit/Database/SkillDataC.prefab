@@ -1,0 +1,623 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: SkillDataC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.469342, y: 0.09645724, z: 13.944976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c845427e5bbd443bb45774e0e9cf48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skill:
+  - skillName: 
+    icon: {fileID: 0}
+    iconSprite: {fileID: 21300000, guid: 442ae440c81180847919be9ae09ecfc7, type: 3}
+    skillPrefab: {fileID: 0}
+    skillAnimation: {fileID: 0}
+    mecanimTriggerName: 
+    manaCost: 0
+    castTime: 0
+    skillDelay: 0
+    coolDown: 0
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Firebolt
+    icon: {fileID: 2800000, guid: 48eb15d2560884040b3b08239b820ced, type: 3}
+    iconSprite: {fileID: 21300000, guid: 48eb15d2560884040b3b08239b820ced, type: 3}
+    skillPrefab: {fileID: 400004, guid: ed1eb49e2344d524491309ba72d0b173, type: 3}
+    skillAnimation: {fileID: 7400000, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: cast
+    manaCost: 10
+    castTime: 0.5
+    skillDelay: 0.3
+    coolDown: 1
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Triple Firebolt
+    icon: {fileID: 2800000, guid: f7ef44583dfe3a0448f6e4b9d87491c5, type: 3}
+    iconSprite: {fileID: 21300000, guid: f7ef44583dfe3a0448f6e4b9d87491c5, type: 3}
+    skillPrefab: {fileID: 400018, guid: 547cae6de15bd5a4a9d5ec315bdffcdc, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 16
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 5
+    description: 
+    castEffect: {fileID: 141516, guid: 1a8bd29dbe79f434aa542335b3a583c1, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Ground Crush
+    icon: {fileID: 2800000, guid: 7986c36ae6f106d4ebbc592056966bd2, type: 3}
+    iconSprite: {fileID: 21300000, guid: 7986c36ae6f106d4ebbc592056966bd2, type: 3}
+    skillPrefab: {fileID: 400000, guid: 672bbed215dab424c93c7682a5728481, type: 3}
+    skillAnimation: {fileID: 7400024, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: 
+    manaCost: 21
+    castTime: 0.5
+    skillDelay: 0.5
+    coolDown: 7
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Heal
+    icon: {fileID: 2800000, guid: f7e889b0a0892a944897e004b4a9c25f, type: 3}
+    iconSprite: {fileID: 21300000, guid: f7e889b0a0892a944897e004b4a9c25f, type: 3}
+    skillPrefab: {fileID: 400000, guid: 49ee484865ff03742aa767eb454423da, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 15
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 30
+    description: 
+    castEffect: {fileID: 140250, guid: 09db79cc955c09f43b21a02d1384b6d8, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Brave
+    icon: {fileID: 2800000, guid: ed2531cca51fb43449046577259e86f6, type: 3}
+    iconSprite: {fileID: 21300000, guid: ed2531cca51fb43449046577259e86f6, type: 3}
+    skillPrefab: {fileID: 400000, guid: 76c78c706295b2245a391fd68bde90cc, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 20
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 50
+    description: 
+    castEffect: {fileID: 140250, guid: 09db79cc955c09f43b21a02d1384b6d8, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Barrier
+    icon: {fileID: 2800000, guid: 69cd13271e02f9248b2e0d57887d90c2, type: 3}
+    iconSprite: {fileID: 21300000, guid: 69cd13271e02f9248b2e0d57887d90c2, type: 3}
+    skillPrefab: {fileID: 400000, guid: 7f265160146e24d46b5d093e50e5534c, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 20
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 50
+    description: 
+    castEffect: {fileID: 140250, guid: 09db79cc955c09f43b21a02d1384b6d8, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Faith
+    icon: {fileID: 2800000, guid: 2f75a30a870a8d64fbf889d741c5f1f9, type: 3}
+    iconSprite: {fileID: 21300000, guid: 2f75a30a870a8d64fbf889d741c5f1f9, type: 3}
+    skillPrefab: {fileID: 400000, guid: 9c77aba8e4b0dbc4296b420b6818ce2a, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 20
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 50
+    description: 
+    castEffect: {fileID: 140250, guid: 09db79cc955c09f43b21a02d1384b6d8, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Magic Barrier
+    icon: {fileID: 2800000, guid: db3e360396d680342bac66efe3d35c53, type: 3}
+    iconSprite: {fileID: 21300000, guid: db3e360396d680342bac66efe3d35c53, type: 3}
+    skillPrefab: {fileID: 400000, guid: 284bb4db6afda8443a945eaffbf5d32b, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 20
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 50
+    description: 
+    castEffect: {fileID: 140250, guid: 09db79cc955c09f43b21a02d1384b6d8, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Crow
+    icon: {fileID: 2800000, guid: a0fbcae7a57dea247bb9cfcecb745160, type: 3}
+    iconSprite: {fileID: 21300000, guid: a0fbcae7a57dea247bb9cfcecb745160, type: 3}
+    skillPrefab: {fileID: 400000, guid: 96a64689e69b4374fb5ff1b223684c50, type: 3}
+    skillAnimation: {fileID: 7400000, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 25
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 30
+    description: 
+    castEffect: {fileID: 198408, guid: fb16ca24c5ea8644d9171e9b59770e41, type: 3}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Poison Bolt
+    icon: {fileID: 2800000, guid: 0e7ac7111fc0aab41be072f20baf0451, type: 3}
+    iconSprite: {fileID: 21300000, guid: 0e7ac7111fc0aab41be072f20baf0451, type: 3}
+    skillPrefab: {fileID: 418190, guid: 190d47a37fc10224eb4030ba14e971cf, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: 
+    manaCost: 15
+    castTime: 0.5
+    skillDelay: 0.3
+    coolDown: 1
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Poison Mist
+    icon: {fileID: 2800000, guid: cb7bc728fda8b384e8283fc209c657f4, type: 3}
+    iconSprite: {fileID: 21300000, guid: cb7bc728fda8b384e8283fc209c657f4, type: 3}
+    skillPrefab: {fileID: 411518, guid: 89fae39bc2fc7f744aafe49dc130dc41, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 32
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 15
+    description: 
+    castEffect: {fileID: 140250, guid: 09db79cc955c09f43b21a02d1384b6d8, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 1
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Meteor
+    icon: {fileID: 2800000, guid: bad3665fb7182034f9929a665f4a8059, type: 3}
+    iconSprite: {fileID: 21300000, guid: bad3665fb7182034f9929a665f4a8059, type: 3}
+    skillPrefab: {fileID: 451132, guid: 2d0b92e0b256e9a4dba9dd136b91641a, type: 3}
+    skillAnimation: {fileID: 7400000, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 45
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 15
+    description: 
+    castEffect: {fileID: 141516, guid: 1a8bd29dbe79f434aa542335b3a583c1, type: 3}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 1
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Blade Wave
+    icon: {fileID: 2800000, guid: 8326ea82681edb343a3c3e582d9e316b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 8326ea82681edb343a3c3e582d9e316b, type: 3}
+    skillPrefab: {fileID: 466408, guid: 9cd94ff4017b02748a9b8dd399d68d04, type: 3}
+    skillAnimation: {fileID: 7400016, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: 
+    manaCost: 25
+    castTime: 0.3
+    skillDelay: 0.3
+    coolDown: 3
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 1
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Whirlwind
+    icon: {fileID: 2800000, guid: 74e5ebf783084b34bb127dab539ac0c0, type: 3}
+    iconSprite: {fileID: 21300000, guid: 74e5ebf783084b34bb127dab539ac0c0, type: 3}
+    skillPrefab: {fileID: 476122, guid: 17218d07b39c62f4daa0fcf3174a24b5, type: 3}
+    skillAnimation: {fileID: 7400000, guid: 5caad5d1d098a8e47a350a6b43e4e269, type: 3}
+    mecanimTriggerName: 
+    manaCost: 32
+    castTime: 0.1
+    skillDelay: 0.8
+    coolDown: 7
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 0
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 1
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Bash
+    icon: {fileID: 2800000, guid: d188c6a331112754cafdbf64b0e77742, type: 3}
+    iconSprite: {fileID: 21300000, guid: d188c6a331112754cafdbf64b0e77742, type: 3}
+    skillPrefab: {fileID: 400000, guid: 21a14e63b5c68244aa864cce7e584043, type: 3}
+    skillAnimation: {fileID: 7400022, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: 
+    manaCost: 10
+    castTime: 0.12
+    skillDelay: 0.18
+    coolDown: 3
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 0
+    skillSpawn: 0
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    requireWeapon: 1
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Triple Slashes
+    icon: {fileID: 2800000, guid: b7c0e320dc6428747b769009438eb1f6, type: 3}
+    iconSprite: {fileID: 21300000, guid: b7c0e320dc6428747b769009438eb1f6, type: 3}
+    skillPrefab: {fileID: 400000, guid: 67fe852226ef96a4bbe68da833bf9b8e, type: 3}
+    skillAnimation: {fileID: 7400020, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: 
+    manaCost: 21
+    castTime: 0.12
+    skillDelay: 0.12
+    coolDown: 7
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 0
+    skillSpawn: 0
+    soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    requireWeapon: 1
+    requireWeaponType: 0
+    multipleHit:
+    - skillPrefab: {fileID: 400000, guid: 67fe852226ef96a4bbe68da833bf9b8e, type: 3}
+      skillAnimation: {fileID: 7400022, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.12
+      skillDelay: 0.12
+      soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+    - skillPrefab: {fileID: 400000, guid: 21a14e63b5c68244aa864cce7e584043, type: 3}
+      skillAnimation: {fileID: 7400024, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.12
+      skillDelay: 0.18
+      soundEffect: {fileID: 8300000, guid: 2f4799e6c7eb97b488b6d7d3c3fc2693, type: 3}
+  - skillName: Ice Bolt
+    icon: {fileID: 2800000, guid: 4339d87f56938bb4c8cb4fd59ad3284e, type: 3}
+    iconSprite: {fileID: 21300000, guid: 4339d87f56938bb4c8cb4fd59ad3284e, type: 3}
+    skillPrefab: {fileID: 408392, guid: c8aed108e0dc0bd45b259f15690ecc6d, type: 3}
+    skillAnimation: {fileID: 7400000, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: cast
+    manaCost: 10
+    castTime: 0.5
+    skillDelay: 0.3
+    coolDown: 1
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Lightning
+    icon: {fileID: 2800000, guid: f9ae2a2e27fa0ed4f9ebafac3fb649ab, type: 3}
+    iconSprite: {fileID: 21300000, guid: f9ae2a2e27fa0ed4f9ebafac3fb649ab, type: 3}
+    skillPrefab: {fileID: 404068, guid: 472cc2f2a2ced6643804f51033ddcd4d, type: 3}
+    skillAnimation: {fileID: 7400000, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    mecanimTriggerName: 
+    manaCost: 10
+    castTime: 0.5
+    skillDelay: 0.3
+    coolDown: 1
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 1
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Flame Shield
+    icon: {fileID: 2800000, guid: 94eb71d8d44710441b888f4ac22d82bf, type: 3}
+    iconSprite: {fileID: 21300000, guid: 94eb71d8d44710441b888f4ac22d82bf, type: 3}
+    skillPrefab: {fileID: 449954, guid: c84b1c657cfefc34db3b420c64204e76, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 40
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 45
+    description: 
+    castEffect: {fileID: 141516, guid: 1a8bd29dbe79f434aa542335b3a583c1, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Ice Spike
+    icon: {fileID: 2800000, guid: b4f94ba9a3764224cb4979e6505649eb, type: 3}
+    iconSprite: {fileID: 21300000, guid: b4f94ba9a3764224cb4979e6505649eb, type: 3}
+    skillPrefab: {fileID: 484924, guid: 2b328f89cef918644901823854a56523, type: 3}
+    skillAnimation: {fileID: 7400002, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 25
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 5
+    description: 
+    castEffect: {fileID: 140250, guid: 247327e489b82f448b6226274c0139ab, type: 3}
+    sendMsg: 
+    whileAttack: 2
+    skillSpawn: 1
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Arrow Shower
+    icon: {fileID: 2800000, guid: a70eb5d248c6671419ab31f13b5532a3, type: 3}
+    iconSprite: {fileID: 21300000, guid: a70eb5d248c6671419ab31f13b5532a3, type: 3}
+    skillPrefab: {fileID: 457412, guid: 37de71a8ece8c8241b87fcd7d698f51a, type: 3}
+    skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    mecanimTriggerName: 
+    manaCost: 15
+    castTime: 0.24
+    skillDelay: 0.18
+    coolDown: 1
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 1
+    requireWeaponType: 1
+    multipleHit: []
+  - skillName: Rapid Shot
+    icon: {fileID: 2800000, guid: 673af45c054a28c4392d760b86093a76, type: 3}
+    iconSprite: {fileID: 21300000, guid: 673af45c054a28c4392d760b86093a76, type: 3}
+    skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+    skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    mecanimTriggerName: 
+    manaCost: 28
+    castTime: 0.15
+    skillDelay: 0.05
+    coolDown: 10
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 1
+    requireWeaponType: 1
+    multipleHit:
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.05
+      soundEffect: {fileID: 0}
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.05
+      soundEffect: {fileID: 0}
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.05
+      soundEffect: {fileID: 0}
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.05
+      soundEffect: {fileID: 0}
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.05
+      soundEffect: {fileID: 0}
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.05
+      soundEffect: {fileID: 0}
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.05
+      soundEffect: {fileID: 0}
+    - skillPrefab: {fileID: 400000, guid: c5233b4396458654c8d1e9dab98cf7b3, type: 3}
+      skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+      mecanimTriggerName: 
+      castTime: 0.1
+      skillDelay: 0.28
+      soundEffect: {fileID: 0}
+  - skillName: Exploding Arrow
+    icon: {fileID: 2800000, guid: 10a009e181c58bb40aad89fac57498d3, type: 3}
+    iconSprite: {fileID: 21300000, guid: 10a009e181c58bb40aad89fac57498d3, type: 3}
+    skillPrefab: {fileID: 467056, guid: f46a7d5dec431124e93a78e9212039fb, type: 3}
+    skillAnimation: {fileID: 7400010, guid: 52aca401324632e489486e6172bd60e5, type: 3}
+    mecanimTriggerName: 
+    manaCost: 25
+    castTime: 0.24
+    skillDelay: 0.18
+    coolDown: 7
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 1
+    requireWeaponType: 1
+    multipleHit: []
+  - skillName: Turret
+    icon: {fileID: 2800000, guid: 2d0a6a72f9ba2284e92763a5e7f0bc0e, type: 3}
+    iconSprite: {fileID: 21300000, guid: 2d0a6a72f9ba2284e92763a5e7f0bc0e, type: 3}
+    skillPrefab: {fileID: 4906784478283554, guid: 20a40cfce4f03db4bb861794f086869c,
+      type: 3}
+    skillAnimation: {fileID: 7400000, guid: 4005da3b941e94a489994df49050ba2f, type: 3}
+    mecanimTriggerName: 
+    manaCost: 50
+    castTime: 0.24
+    skillDelay: 0.18
+    coolDown: 30
+    description: 
+    castEffect: {fileID: 0}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Fire Bird
+    icon: {fileID: 2800000, guid: ddd12090f45c4fd4abe1defa28f6a88d, type: 3}
+    iconSprite: {fileID: 21300000, guid: ddd12090f45c4fd4abe1defa28f6a88d, type: 3}
+    skillPrefab: {fileID: 4054418032814334, guid: 6abad936d8c04284fa28e4d2ea375480,
+      type: 3}
+    skillAnimation: {fileID: 7400000, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 35
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 30
+    description: 
+    castEffect: {fileID: 198408, guid: fb16ca24c5ea8644d9171e9b59770e41, type: 3}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
+  - skillName: Wolf
+    icon: {fileID: 2800000, guid: 234dd5f6472147f45866b953951be203, type: 3}
+    iconSprite: {fileID: 21300000, guid: 234dd5f6472147f45866b953951be203, type: 3}
+    skillPrefab: {fileID: 4034448884395736, guid: 870a84f339439d44cae058d7ecb608f9,
+      type: 3}
+    skillAnimation: {fileID: 7400000, guid: 1bb13d23c1acce549b986854393f8222, type: 3}
+    mecanimTriggerName: 
+    manaCost: 45
+    castTime: 1.2
+    skillDelay: 0.3
+    coolDown: 30
+    description: 
+    castEffect: {fileID: 198408, guid: fb16ca24c5ea8644d9171e9b59770e41, type: 3}
+    sendMsg: 
+    whileAttack: 1
+    skillSpawn: 0
+    soundEffect: {fileID: 0}
+    requireWeapon: 0
+    requireWeaponType: 0
+    multipleHit: []
